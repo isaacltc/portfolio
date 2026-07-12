@@ -69,6 +69,11 @@ button {
     gap: 10px;
     font-size: 1.05rem;
     font-weight: 800;
+    transition: transform 180ms ease, color 180ms ease;
+}
+
+.brand:hover {
+    transform: translateY(-3px);
 }
 
 .brand-symbol {
@@ -90,10 +95,12 @@ button {
     color: var(--muted);
     font-size: 0.92rem;
     font-weight: 700;
+    transition: color 180ms ease, transform 180ms ease;
 }
 
 .nav-links a:hover {
     color: var(--accent-dark);
+    transform: translateY(-3px);
 }
 
 .menu-button {
@@ -104,6 +111,12 @@ button {
     border: 1px solid var(--line);
     background: transparent;
     cursor: pointer;
+    transition: transform 180ms ease, border-color 180ms ease;
+}
+
+.menu-button:hover {
+    border-color: var(--accent);
+    transform: translateY(-3px);
 }
 
 .menu-button span {
@@ -255,7 +268,14 @@ h3 {
 }
 
 .code-string {
+    display: inline-block;
     color: #79d9bd;
+    transition: color 180ms ease, transform 180ms ease;
+}
+
+.code-string:hover {
+    color: #a7f5dd;
+    transform: translateY(-4px);
 }
 
 .code-number {
@@ -628,4 +648,57 @@ h3 {
         padding: 22px;
         font-size: 0.75rem;
     }
+}
+.contact form {
+    display: grid;
+    gap: 16px;
+    max-width: 520px;
+    margin: 32px auto 0;
+    text-align: left;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid var(--line);
+    background: var(--surface);
+    color: var(--ink);
+    font: inherit;
+    font-size: 0.98rem;
+}
+
+.contact textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+.contact form .button {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+.contact .field {
+    display: grid;
+    gap: 6px;
+}
+
+.contact label {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--ink);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 2px;
 }

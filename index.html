@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio de Isaac, estudante e desenvolvedor iniciante em busca de uma oportunidade como jovem aprendiz.">
+    <meta name="description"
+        content="Portfólio de Isaac, estudante e desenvolvedor iniciante em busca de uma oportunidade como jovem aprendiz.">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <title>Isaac | Desenvolvedor iniciante</title>
 </head>
+
 <body>
     <header class="site-header">
         <a class="brand" href="#inicio" aria-label="Página inicial de Isaac">
@@ -39,7 +42,7 @@
                     primeira oportunidade como jovem aprendiz para aprender, colaborar e crescer na área.
                 </p>
                 <div class="hero-actions">
-                    <a class="button primary" href="#projetos">Ver meu projeto</a>
+                    <a class="button primary" href="#projetos">Ver meus projetos</a>
                     <a class="button secondary" href="#contato">Entrar em contato</a>
                 </div>
             </div>
@@ -75,7 +78,8 @@
                 <p>
                     Estudo no Colégio Estadual Cívico Militar Elias Abrahão e moro em Quatro Barras, Paraná.
                     Comecei a aprender programação por interesse em entender como sites e sistemas
-                    funcionam, e procuro me aprofundar em automação de sistemas (back-end) e dominar as diversas IA.
+                    funcionam, e procuro me aprofundar em automação de sistemas (back-end) e também
+                    aprender a usar ferramentas de IA para estudar e criar projetos.
                 </p>
                 <p>
                     Busco uma oportunidade de jovem aprendiz para desenvolver minhas habilidades,
@@ -88,8 +92,8 @@
                         <span>anos</span>
                     </div>
                     <div>
-                        <strong>03</strong>
-                        <span>projeto concluído</span>
+                        <strong>02</strong>
+                        <span>projetos concluídos</span>
                     </div>
                     <div>
                         <strong>100%</strong>
@@ -149,7 +153,8 @@
             </div>
 
             <article class="project">
-                <a class="project-image" href="https://isaacltc.github.io/academia/index.html" aria-label="Abrir projeto PulseFit">
+                <a class="project-image" href="https://isaacltc.github.io/academia/index.html"
+                    aria-label="Abrir projeto PulseFit">
                     <img src="assets/hero-gym.png" alt="Página inicial do projeto de academia PulseFit">
                     <span>Abrir projeto</span>
                 </a>
@@ -165,36 +170,35 @@
                         <span>CSS</span>
                         <span>Responsivo</span>
                     </div>
-                    <a class="text-link" href="https://isaacltc.github.io/academia/index.html">Visualizar site <span aria-hidden="true">→</span></a>
+                    <a class="text-link" href="https://isaacltc.github.io/academia/index.html">Visualizar site <span
+                            aria-hidden="true">→</span></a>
+                </div>
+            </article>
+
+            <article class="project">
+                <a class="project-image" href="https://isaacltc.github.io/barbearia/"
+                    aria-label="Abrir projeto Barbearia teste">
+                    <img src="assets/barbearia.webp" alt="Página inicial do projeto de barbearia">
+                    <span>Abrir projeto</span>
+                </a>
+                <div class="project-info">
+                    <p class="project-number">Projeto 02</p>
+                    <h3>Barbearia Teste</h3>
+                    <p>
+                        Site responsivo para uma barbearia fictícia, com planos,
+                        informações e formulário de contato.
+                    </p>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <a class="text-link" href="https://isaacltc.github.io/barbearia/">
+                        Visualizar site <span aria-hidden="true">→</span>
+                    </a>
                 </div>
             </article>
         </section>
-        <article class="project">
-    <a class="project-image" href="https://isaacltc.github.io/barbearia/">
-        <img src="assets/barbearia.webp" alt="Projeto de site para restaurante">
-        <span>Abrir projeto</span>
-    </a>
-
-    <div class="project-info">
-        <p class="project-number">Projeto 02</p>
-        <h3>Barbearia teste</h3>
-
-        <p>
-            Site responsivo para uma barbearia fictícia, com planos,
-            informações e formulário de contato.
-        </p>
-
-        <div class="tags">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-        </div>
-
-        <a class="text-link" href="https://isaacltc.github.io/barbearia/">
-            Visualizar site <span aria-hidden="true">→</span>
-        </a>
-    </div>
-</article>
 
         <section class="journey-section">
             <div class="section journey">
@@ -232,16 +236,36 @@
             <p class="eyebrow">Contato</p>
             <h2>Estou pronto para aprender e dar o primeiro passo.</h2>
             <p>
-                Tenho interesse em oportunidades de jovem aprendiz na área de tecnologia,
+                Tenho interesse em oportunidades de jovem aprendiz ou estágiario na área de tecnologia,
                 desenvolvimento ou suporte.
             </p>
-            <a class="button primary" href="mailto:isaacltcruz10@gmail.com">Enviar e-mail</a>
+            <form id="form" action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="0d2e3ed8-2ee4-461a-99bb-c6ecd41e8d32">
+
+    <div class="field">
+        <label for="name">Nome</label>
+        <input type="text" id="name" name="name" placeholder="Seu nome" required>
+    </div>
+
+    <div class="field">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+    </div>
+
+    <div class="field">
+        <label for="message">Mensagem</label>
+        <textarea id="message" name="message" placeholder="Sua mensagem" required></textarea>
+    </div>
+
+    <button type="submit" class="button primary">Enviar</button>
+</form>
         </section>
     </main>
 
     <footer class="site-footer">
         <p>Desenvolvido por Isaac.</p>
-        <p>Quatro Barras, Paraná · 2026</p>
+        <p>Curitiba, Paraná · 2026</p>
     </footer>
 </body>
+
 </html>
